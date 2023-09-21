@@ -75,6 +75,62 @@ export default function Forest() {
         left: 1280,
         opacity: 0.3,
       }} />
+      <AsciiArt model={tree} css={{
+        bottom: 20,
+        left: 1380,
+        opacity: 0.8,
+      }} />
+      <AsciiArt model={tree} css={{
+        bottom: 80,
+        left: 1480,
+        opacity: 0.4,
+      }} />
+      <AsciiArt model={tree} css={{
+        bottom: 10,
+        left: 1580,
+      }} />
+      <AsciiArt model={tree} css={{
+        bottom: 50,
+        left: 1680,
+        opacity: 0.7,
+      }} />
+      <AsciiArt model={tree} css={{
+        bottom: 20,
+        left: 1780,
+      }} />
+      <AsciiArt model={tree} css={{
+        bottom: 100,
+        left: 1880,
+        opacity: 0.3,
+      }} />
+      <AsciiArt model={tree} css={{
+        bottom: 20,
+        left: 1980,
+        opacity: 0.8,
+      }} />
+      <AsciiArt model={tree} css={{
+        bottom: 80,
+        left: 2080,
+        opacity: 0.4,
+      }} />
+      <AsciiArt model={tree} css={{
+        bottom: 10,
+        left: 2180,
+      }} />
+      <AsciiArt model={tree} css={{
+        bottom: 50,
+        left: 2280,
+        opacity: 0.7,
+      }} />
+      <AsciiArt model={tree} css={{
+        bottom: 20,
+        left: 2380,
+      }} />
+      <AsciiArt model={tree} css={{
+        bottom: 100,
+        left: 2480,
+        opacity: 0.3,
+      }} />
     </>
   )
 }

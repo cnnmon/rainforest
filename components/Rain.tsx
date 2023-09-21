@@ -3,8 +3,8 @@ import { useEffect, useState } from "react"
 import AsciiArt from "./AsciiArt"
 
 const droplets = ["/", "/", "/", "/", "/", "/", ",", ",", ".", ".", ",/", "/", "/", "/", "/", "/", "/", ",", ",", ".", ".", ",/", ",.//"]
-const window_x = 1500
-const window_y = 500
+const window_x = 2500
+const window_y = 570
 
 function Droplet({
   start_x,
