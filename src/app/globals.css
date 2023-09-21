@@ -9,6 +9,15 @@ body {
   overflow: hidden;
 }
 
+h1, input {
+  font-size: 14px;
+}
+
+input {
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
 .ascii-art {
   position: absolute;
   font-family: "Lucida Console", Monaco, monospace;

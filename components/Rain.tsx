@@ -2,16 +2,18 @@
 import { useEffect, useState } from "react"
 import AsciiArt from "./AsciiArt"
 
-const droplets = ["/", "/", "/", "/", "/", "/", ",", ",", ".", ".", ",/", "/", "/", "/", "/", "/", "/", ",", ",", ".", ".", ",/", ",.//"]
 const window_x = 2500
 const window_y = 570
+const n_droplets = 40
 
 function Droplet({
   start_x,
   start_y,
+  droplets,
 }: {
   start_x: number,
   start_y: number,
+  droplets: string[],
 }) {
   const [coord, setCoords] = useState([start_x, start_y])
   const [model, setModel] = useState(droplets[0])
@@ -42,8 +44,7 @@ function Droplet({
   )
 }
 
-export default function Rain() {
-  const n_droplets = 35
+export default function Rain({rain}: {rain: string}) {
   const droplet_coordinates = Array(n_droplets).fill([0, 0])
     .map(() => {
       const x = Math.random() * window_x
@@ -54,7 +55,7 @@ export default function Rain() {
   return (
     <>
       {droplet_coordinates.map(([x, y], i) => (
-        <Droplet key={i} start_x={x} start_y={y} />
+        <Droplet key={i} start_x={x} start_y={y} droplets={rain.split(' ')} />
       ))}
     </>
   )
