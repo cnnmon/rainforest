@@ -19,7 +19,7 @@ export default function Menu({
 }) {
 
   return (
-    <div className="fixed p-4">
+    <div className="fixed p-8">
       <AsciiArt model={text} css={{
         position: 'relative'
       }} />
